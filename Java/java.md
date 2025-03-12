@@ -1,2 +1,51 @@
-*Java Knowledge*
+# Java Knowledge
 
+## Spring framework
+- Spring 是一個開源的應用框架，旨在簡化 Java 應用程式的開發，提供控制反轉（IoC）和依賴注入（DI）等功能。
+
+1. 依賴注入 (IoC)
+   - 什麼是 Spring IoC 容器？
+      -  IoC 容器負責管理對象的生命週期和依賴關係。
+   - 什麼是依賴注入？
+     - 依賴注入是一種設計模式，通過將對象的依賴關係在運行時注入到對象中來減少耦合。
+2. AOP (面向切面編程)
+   - 什麼是 AOP？
+     - AOP 是一種編程範式，用於將橫切關心（如日誌、安全性）與業務邏輯分離。
+3. 依賴注入（DI）
+   - 是一種設計模式，通過外部注入的方式管理物件之間的依賴關係。它能夠幫助實現解耦、提高可測試性，並增加系統的靈活性和可維護性。這使得在開發複雜應用時更加高效，且能有效降低代碼的複雜度。
+
+## 什麼是 Spring Boot？
+   - Spring Boot 是 Spring 的延伸，目標是讓開發者能夠快速建立 Spring 應用程式，而不需要處理大量的配置。它內建 Web 伺服器、自動配置、簡化依賴管理，適合用來開發 微服務（Microservices） 或 獨立應用。
+   - 理解核心概念：熟悉 IoC（控制反轉）、DI（依賴注入）、AOP（面向切面編程）等基礎知識。
+
+## java JPA 是什麼
+  - 是 Java 標準的一個 ORM 規範，通過映射 Java 物件與資料庫表格，使開發者能夠輕鬆處理資料庫操作。它的核心包括 EntityManager、JPQL、事務管理 等，能大幅簡化 Java 應用中的資料持久化工作，並且能與不同的 ORM 實現（如 Hibernate）兼容。
+
+### Spring JDBC
+  - 概念：提供直接訪問數據庫的方式，使用 JdbcTemplate 類來執行 SQL 語句，並映射查詢結果。
+### Spring Data JPA
+  - 項目需要高級 ORM 功能（如關係映射和延遲加載）。
+  - 希望快速開發並減少樣板代碼。
+  - 項目與 Spring 生態系統深度集成。
+### MyBatis
+  - 需要完全控制 SQL 語句。
+  - 項目中存在大量複雜查詢或性能優化需求。
+  - 團隊熟悉 SQL 並希望避免 ORM 的抽象層。
+
+## Redis
+   1. 主要用途：Redis 是一個內存型數據存儲系統，主要用於快取、即時分析和簡單的消息系統。
+   2. 數據結構支持：支持多種數據結構（如字符串、哈希、列表、集合、有序集合等），靈活處理不同類型的數據。
+   3. 高性能：基於內存操作，讀寫速度極快，適合需要低延遲的場景。
+   4. Pub/Sub 模型：提供基本的發布/訂閱功能，但不具備 RabbitMQ 的高級功能（如持久化和路由）。
+   5. 多功能性：除了作為消息系統，還可用作快取層、會話存儲或即時分析工具。
+
+## Java 17 新功能
+![alt text](<pages/截圖 2025-03-10 上午9.35.07.png>)
+### sealed 限制繼承
+![alt text](<pages/Pasted Graphic 3.png>)
+### record 取代傳統 POJO
+![alt text](<pages/Pasted Graphic 2.png>)
+### switch 模式匹配
+![alt text](<pages/Pasted Graphic 1.png>)
+### Text Blocks 簡化多行字串
+![alt text](<pages/Pasted Graphic.png>)
