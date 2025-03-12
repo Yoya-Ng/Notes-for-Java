@@ -10,22 +10,23 @@
       - [MyBatis](#mybatis)
   - [Redis](#redis)
   - [語法相關問題](#語法相關問題)
-    - [== 和 .equals() 的區別？](#-和-equals-的區別)
-    - [Java 中 final, finally, finalize 的區別？](#java-中-final-finally-finalize-的區別)
-    - [String, StringBuilder, StringBuffer 的區別 ?](#string-stringbuilder-stringbuffer-的區別-)
-    - [int \& integer 差別?](#int--integer-差別)
-    - [Java 8 引入的流（Stream）是什麼？](#java-8-引入的流stream是什麼)
-    - [什麼是 Lambda 表達式？有什麼優點？](#什麼是-lambda-表達式有什麼優點)
-    - [微服務（Microservices）](#微服務microservices)
-    - [雲服務（Cloud Services）](#雲服務cloud-services)
-    - [什麼事 設計模式（Design Pattern）?](#什麼事-設計模式design-pattern)
-      - [1.創建型模式（Creational Patterns）](#1創建型模式creational-patterns)
-      - [2.結構型模式（Structural Patterns）](#2結構型模式structural-patterns)
-      - [3.行為型模式（Behavioral Patterns）](#3行為型模式behavioral-patterns)
-    - [－－－待處理](#待處理)
-    - [多執行緒和併發問題](#多執行緒和併發問題)
-    - [synchronized 和 Lock 的區別？](#synchronized-和-lock-的區別)
-    - [JVM?](#jvm)
+      - [== 和 .equals() 的區別？](#-和-equals-的區別)
+      - [Java 中 final, finally, finalize 的區別？](#java-中-final-finally-finalize-的區別)
+      - [String, StringBuilder, StringBuffer 的區別 ?](#string-stringbuilder-stringbuffer-的區別-)
+      - [int \& integer 差別?](#int--integer-差別)
+      - [Java 8 引入的流（Stream）是什麼？](#java-8-引入的流stream是什麼)
+      - [什麼是 Lambda 表達式？有什麼優點？](#什麼是-lambda-表達式有什麼優點)
+      - [－－－待處理](#待處理)
+      - [多執行緒和併發問題](#多執行緒和併發問題)
+      - [synchronized 和 Lock 的區別？](#synchronized-和-lock-的區別)
+      - [JVM?](#jvm)
+  - [微服務（Microservices）](#微服務microservices)
+  - [雲服務（Cloud Services）](#雲服務cloud-services)
+  - [Tomcat 和 JBoss 有什麼區別？](#tomcat-和-jboss-有什麼區別)
+  - [什麼事 設計模式（Design Pattern）?](#什麼事-設計模式design-pattern)
+    - [1.創建型模式（Creational Patterns）](#1創建型模式creational-patterns)
+    - [2.結構型模式（Structural Patterns）](#2結構型模式structural-patterns)
+    - [3.行為型模式（Behavioral Patterns）](#3行為型模式behavioral-patterns)
 
 
 ## Spring framework
@@ -88,16 +89,16 @@
 
 ## 語法相關問題
 
-### == 和 .equals() 的區別？
+#### == 和 .equals() 的區別？
    - == 比較的是 記憶體地址（基本類型、引用類型）。
    - .equals() 預設等價於 ==，但在 String 和 Integer 等類中 被重寫，比較的是內容。
   
-### Java 中 final, finally, finalize 的區別？
+#### Java 中 final, finally, finalize 的區別？
    - final：用於 變數、方法、類，不可變或不可重寫。
    - finally：用於 try-catch-finally，確保程式塊執行。
    - ~~finalize()：垃圾回收前執行，已被淘汰（JDK 9 棄用）。~~
 
-### String, StringBuilder, StringBuffer 的區別 ?
+#### String, StringBuilder, StringBuffer 的區別 ?
 - String - String Pool（字串池機制）
   - ❌ 不可變
   - ✅ 安全（不可變）
@@ -111,22 +112,34 @@
   - ✅ 安全（同步鎖）
   - 多執行緒、大量字串操作
 
-### int & integer 差別?
+#### int & integer 差別?
 - 基本資料類型 vs 物件類型
 
-### Java 8 引入的流（Stream）是什麼？
+#### Java 8 引入的流（Stream）是什麼？
 - 更高效的集合操作方式，如過濾、映射、排序等。
 
-### 什麼是 Lambda 表達式？有什麼優點？
+#### 什麼是 Lambda 表達式？有什麼優點？
 - 一種簡化函數式編程的方式，使得代碼更加簡潔。
 
-### 微服務（Microservices）
+
+
+#### －－－待處理
+#### 多執行緒和併發問題
+
+#### synchronized 和 Lock 的區別？
+   - synchronized：內建鎖，自動釋放，效能較低。
+   - Lock（如 ReentrantLock）：手動釋放，支援可重入、超時等待、公平鎖等特性。
+  
+#### JVM?
+
+
+## 微服務（Microservices）
 > 微服務是一種架構模式
 - 每個微服務都是獨立的，可以獨立開發、測試、部署。
 - Spring Boot / Spring Cloud：用於快速開發和集成微服務的框架。
 - Docker：提供容器化環境來部署微服務，確保每個微服務可以在任何環境中一致運行。
 - Kubernetes：提供容器編排平台，用於管理微服務的部署、擴展和運行。
-### 雲服務（Cloud Services） 
+## 雲服務（Cloud Services） 
 - Amazon Web Services (AWS)：
   - 全球最大的雲服務提供商，提供各種 IaaS、PaaS 和 SaaS 服務，涵蓋計算、存儲、網絡、人工智能等領域。
 - Microsoft Azure：
@@ -134,9 +147,18 @@
 - IBM Cloud：
   - IBM 提供的雲服務平台，專注於企業級解決方案，支持 AI、機器學習、區塊鏈等技術。
 
-### 什麼事 設計模式（Design Pattern）?
+## Tomcat 和 JBoss 有什麼區別？
+- Tomcat：
+  - Tomcat 是一個 Web 伺服器 和 Servlet 容器，Tomcat 適合用於需要輕量級的 Web 應用部署和運行，適合簡單的 Servlet/JSP 應用。
+- JBoss（現名為 WildFly）：
+  - JBoss 提供了一個完整的企業級解決方案，支持分佈式架構、事務處理和消息驅動等功能，適合大型企業應用和多層架構。
+  - 提供了對 EJB、JPA、JMS、JTA 等企業級技術的完整支援，適用於開發和部署企業級應用
+
+
+---
+## 什麼事 設計模式（Design Pattern）?
 計模式通常分為三大類：
-#### 1.創建型模式（Creational Patterns）
+### 1.創建型模式（Creational Patterns）
   > 這些模式主要解決如何將對象或類組合成更大的結構，以達到更好的效率和更清晰的代碼結構。
   - 🔴 單例模式（Singleton Pattern）：
     - 保證一個類只有一個實例，並提供一個全局的訪問點。
@@ -148,7 +170,7 @@
     - 分步構建一個複雜的對象，將對象的構建過程與表示分離。
   - 原型模式（Prototype Pattern）：
     - 通過複製現有的對象來創建新對象，而不是重新創建一個對象。
-#### 2.結構型模式（Structural Patterns）
+### 2.結構型模式（Structural Patterns）
   > 這些模式主要解決如何將對象或類組合成更大的結構，以達到更好的效率和更清晰的代碼結構。
   - 適配器模式（Adapter Pattern）：
     - 將一個類的接口轉換為客戶端所期望的另一種接口，讓原本接口不兼容的類可以合作無間。
@@ -162,7 +184,7 @@
     - 將對象組合成樹形結構來表示部分與整體的層次結構，讓客戶對單個物件和組合物件的使用具有一致性。
   - 享元模式（Flyweight Pattern）：
     - 通過共享相同的對象來減少內存消耗，特別是在處理大量細粒度對象的情況下。
-#### 3.行為型模式（Behavioral Patterns）
+### 3.行為型模式（Behavioral Patterns）
   > 這些模式主要關心對象或類之間的通信和交互，如何提高對象之間協作的靈活性和效率。
   - 🔴 策略模式（Strategy Pattern）：
     - 定義一系列的算法，並將每個算法封裝起來，使得它們可以互換，讓算法的變化獨立於使用算法的客戶。
@@ -178,14 +200,3 @@
     - 將請求封裝成對象，從而讓用戶對請求的發出者和接收者解耦。
   - 中介者模式（Mediator Pattern）：
     - 定義一個對象來封裝一組對象之間的交互，使得這些對象不需要直接互相引用，從而使它們的耦合度降低。
-
-
-
-### －－－待處理
-### 多執行緒和併發問題
-
-### synchronized 和 Lock 的區別？
-   - synchronized：內建鎖，自動釋放，效能較低。
-   - Lock（如 ReentrantLock）：手動釋放，支援可重入、超時等待、公平鎖等特性。
-  
-### JVM?
