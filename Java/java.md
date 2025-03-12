@@ -38,14 +38,3 @@
    3. 高性能：基於內存操作，讀寫速度極快，適合需要低延遲的場景。
    4. Pub/Sub 模型：提供基本的發布/訂閱功能，但不具備 RabbitMQ 的高級功能（如持久化和路由）。
    5. 多功能性：除了作為消息系統，還可用作快取層、會話存儲或即時分析工具。
-
-## Java 17 新功能
-![alt text](<pages/截圖 2025-03-10 上午9.35.07.png>)
-### sealed 限制繼承
-![alt text](<pages/Pasted Graphic 3.png>)
-### record 取代傳統 POJO
-![alt text](<pages/Pasted Graphic 2.png>)
-### switch 模式匹配
-![alt text](<pages/Pasted Graphic 1.png>)
-### Text Blocks 簡化多行字串
-![alt text](<pages/Pasted Graphic.png>)
