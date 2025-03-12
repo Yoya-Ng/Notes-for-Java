@@ -2,9 +2,11 @@
 - [Java Knowledge](#java-knowledge)
   - [Spring framework](#spring-framework)
   - [什麼是 Spring Boot？](#什麼是-spring-boot)
-  - [java JPA 是什麼](#java-jpa-是什麼)
+  - [ORM是什麼？](#orm是什麼)
+  - [JPA 是什麼？](#jpa-是什麼)
     - [Spring JDBC](#spring-jdbc)
     - [Spring Data JPA](#spring-data-jpa)
+    - [Hibernate](#hibernate)
     - [MyBatis](#mybatis)
   - [Redis](#redis)
 
@@ -27,19 +29,39 @@
    - Spring Boot 是 Spring 的延伸，目標是讓開發者能夠快速建立 Spring 應用程式，而不需要處理大量的配置。它內建 Web 伺服器、自動配置、簡化依賴管理，適合用來開發 微服務（Microservices） 或 獨立應用。
    - 理解核心概念：熟悉 IoC（控制反轉）、DI（依賴注入）、AOP（面向切面編程）等基礎知識。
 
-## java JPA 是什麼
-  - 是 Java 標準的一個 ORM 規範，通過映射 Java 物件與資料庫表格，使開發者能夠輕鬆處理資料庫操作。它的核心包括 EntityManager、JPQL、事務管理 等，能大幅簡化 Java 應用中的資料持久化工作，並且能與不同的 ORM 實現（如 Hibernate）兼容。
+## ORM是什麼？
+- JPA（Java Persistence API） – 規範
+- Spring Data JPA － Spring 提供的一個數據訪問抽象層
+- Hibernate – 最流行的 JPA 實作
+- MyBatis – SQL Mapper
+- OpenJPA – JPA 另一種實作
+- EclipseLink – JPA 官方參考實作
+
+## JPA 是什麼？
+> 一個 ORM 的規範，不包含具體實作。  
+> 通過映射 Java 物件與資料庫表格，使開發者能夠輕鬆處理資料庫操作。核心包括 EntityManager、JPQL、事務管理 等，能大幅簡化 Java 應用中的資料持久化工作，  
+> 並且能與不同的 ORM 實現（如 Hibernate）兼容。
+
+1. **EntityManager**：JPA 的核心介面，負責對實體進行 CRUD 操作。
+2. **JPQL（Java Persistence Query Language）**：類似 SQL 的查詢語言，但基於 Java 實體而非資料庫表。
+3. **事務管理（Transaction Management）**：JPA 支援透過 @Transactional 來管理事務，確保資料一致性。
+4. **不同的實現**：JPA 只是規範，常見的實作有 Hibernate、EclipseLink、OpenJPA 等。
 
 ### Spring JDBC
-  - 概念：提供直接訪問數據庫的方式，使用 JdbcTemplate 類來執行 SQL 語句，並映射查詢結果。
+   - 概念：提供直接訪問數據庫的方式，使用 JdbcTemplate 類來執行 SQL 語句，並映射查詢結果。
 ### Spring Data JPA
-  - 項目需要高級 ORM 功能（如關係映射和延遲加載）。
-  - 希望快速開發並減少樣板代碼。
-  - 項目與 Spring 生態系統深度集成。
+   - 需要高級 ORM 功能（如關係映射和延遲加載）。
+   - 自動生成查詢，靈活度稍低
+   - 項目與 Spring 生態系統深度集成。
+### Hibernate
+   - 具體的 ORM 實作  
+   - 手寫 HQL/SQL，靈活度高
+   - 使用 Hibernate 原生的 HQL、Criteria API 或原生 SQL
 ### MyBatis
-  - 需要完全控制 SQL 語句。
-  - 項目中存在大量複雜查詢或性能優化需求。
-  - 團隊熟悉 SQL 並希望避免 ORM 的抽象層。
+   - SQL Mapper（SQL 映射工具）
+   - 需要完全控制 SQL 語句。
+   - 項目中存在大量複雜查詢或性能優化需求。
+   - 需寫 XML
 
 ## Redis
    1. 主要用途：Redis 是一個內存型數據存儲系統，主要用於快取、即時分析和簡單的消息系統。
