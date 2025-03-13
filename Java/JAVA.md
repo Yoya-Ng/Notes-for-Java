@@ -59,7 +59,8 @@
 
 ### ORM是什麼？
    > JPA（Java Persistence API） – 規範  
-    Spring Data JPA － Spring 提供的一個數據訪問抽象層  Hibernate – 最流行的 JPA 實作，ORM 實作   
+    Spring Data JPA － Spring 提供的一個數據訪問抽象  
+    Hibernate – 最流行的 JPA 實作，ORM 實作   
     MyBatis – SQL Mapper  
     OpenJPA – JPA 另一種實作  
     EclipseLink – JPA 官方參考實作  
