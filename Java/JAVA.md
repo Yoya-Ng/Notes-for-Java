@@ -1,4 +1,5 @@
 # Java Knowledge
+
 - [Java Knowledge](#java-knowledge)
   - [Spring framework](#spring-framework)
   - [什麼是 Spring Boot？](#什麼是-spring-boot)
@@ -32,7 +33,7 @@
 ## Spring framework
 - Spring 是一個開源的應用框架，旨在簡化 Java 應用程式的開發，提供控制反轉（IoC）和依賴注入（DI）等功能。
 
-1. 依賴注入 (IoC)
+1. 控制反轉 (IoC) 和 依賴注入（DI）
    - 什麼是 Spring IoC 容器？
       -  IoC 容器負責管理對象的生命週期和依賴關係。
    - 什麼是依賴注入？
