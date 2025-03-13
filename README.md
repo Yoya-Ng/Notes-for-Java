@@ -21,6 +21,12 @@
 #### 標題四
 ##### 標題五
 ###### 標題六
+
+This is an H1
+=============
+
+This is an H2
+-------------
 ```
 
 ## 字型
@@ -90,4 +96,4 @@ _斜體_  `_斜體_`
 >Markdown All in One:reate Table of Contents
 
 ## other
-https://ithelp.ithome.com.tw/articles/10225442
+https://markdown.tw
