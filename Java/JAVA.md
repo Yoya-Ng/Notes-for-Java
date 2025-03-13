@@ -155,7 +155,18 @@
   - JBoss 提供了一個完整的企業級解決方案，支持分佈式架構、事務處理和消息驅動等功能，適合大型企業應用和多層架構。
   - 提供了對 EJB、JPA、JMS、JTA 等企業級技術的完整支援，適用於開發和部署企業級應用
 
+| 技術                                     | 說明                                            |
+| ---------------------------------------- | ----------------------------------------------- |
+| Servlet                                  | 負責處理 HTTP 請求和回應，動態產生網頁內容      |
+| JSP（JavaServer Pages）                  | 讓開發者能在 HTML 中嵌入 Java 代碼              |
+| JSF（JavaServer Faces）                  | 企業級 Web UI 框架，類似於 Angular / React      |
+| JPA（Java Persistence API）              | ORM 框架，用來管理數據庫（類似                  | Hibernate） |
+| JTA（Java Transaction API）              | 負責分散式交易管理（確保資料一致性）            |
+| EJB（Enterprise JavaBeans）              | 負責商業邏輯，支援事務管理                      |
+| JMS（Java Message Service）              | 提供訊息佇列（Message Queue）功能               |
+| CDI（Contexts and Dependency Injection） | 依賴注入（類似 Spring 的 Dependency Injection） |
 
+ 
 ---
 ## 什麼事 設計模式（Design Pattern）?
 計模式通常分為三大類：
