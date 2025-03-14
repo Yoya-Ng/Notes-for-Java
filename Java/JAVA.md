@@ -29,6 +29,10 @@
     - [2.結構型模式（Structural Patterns）](#2結構型模式structural-patterns)
     - [3.行為型模式（Behavioral Patterns）](#3行為型模式behavioral-patterns)
 
+## 什麼是 OOP 物件導向？
+  - 封裝
+  - 繼承
+  - 多型
 
 ## Spring framework
 - Spring 是一個開源的應用框架，旨在簡化 Java 應用程式的開發，提供控制反轉（IoC）和依賴注入（DI）等功能。
@@ -122,7 +126,19 @@
 #### 什麼是 Lambda 表達式？有什麼優點？
 - 一種簡化函數式編程的方式，使得代碼更加簡潔。
 
-
+#### 什麼是集合？
+- List 可重複，有序
+  - ArrayList（動態陣列，查詢快，增刪慢）
+  - LinkedList（鏈結串列，增刪快，查詢慢）
+  - Vector（類似 ArrayList，但執行緒安全）
+- Set 不可重複，無序
+  - HashSet（基於 HashTable，不保證順序）
+  - TreeSet（基於 紅黑樹，元素有序）
+  - LinkedHashSet（維持插入順序）
+- Map （Key-Value)
+  - HashMap（最快，但無序）
+  - TreeMap（Key 有序）
+  - LinkedHashMap（維持插入順序）
 
 #### －－－待處理
 #### 多執行緒和併發問題
@@ -155,7 +171,7 @@
   - JBoss 提供了一個完整的企業級解決方案，支持分佈式架構、事務處理和消息驅動等功能，適合大型企業應用和多層架構。
   - 提供了對 EJB、JPA、JMS、JTA 等企業級技術的完整支援，適用於開發和部署企業級應用
 
-| 技術                                     | 說明                                            |
+| Java EE 的核心技術                       | 說明                                            |
 | ---------------------------------------- | ----------------------------------------------- |
 | Servlet                                  | 負責處理 HTTP 請求和回應，動態產生網頁內容      |
 | JSP（JavaServer Pages）                  | 讓開發者能在 HTML 中嵌入 Java 代碼              |
